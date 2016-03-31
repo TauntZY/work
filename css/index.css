@@ -1,0 +1,137 @@
+*{margin: 0px;padding: 0px}
+html,
+body,
+.page,
+#StageRocket,
+#StageSlogan,
+#StageMain,
+#StageComIntro,
+#StageLeader,
+#StageTeam,
+#StageEvent,
+#StageBusiness,
+#StageGood,
+#StageFuture,
+#StageCase,
+#StageCase2,
+#StageContent{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#id2,#id3,#id4,#id5,#id6,#id7,#id8,#id9,#id10,#id11,#id12,#id13,#content{
+    display:none;
+}
+
+.center-wrapper{
+    overflow: hidden;
+}
+
+#id1,#id2,#id4,#id5,#id6,#id7,#id8,#id9,#id10,#id11,#id12{
+    background-image: url("../images/bg2000.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#id3{
+    background-image: url("../images/mainBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*联系我们*/
+#id13{
+    background: url("../images/contactbg.png") no-repeat center center;
+    background-size: cover;
+}
+#id13 img{
+    display: block;
+    border: 0px;
+    width: 458px;
+    height: 768px;
+    position: absolute;
+    background-size: 100%;
+    margin-top: 96px;
+    margin-left: 92px;
+}
+#id13 div #ewpng{
+    width: 200px;
+    height: 194px;
+    margin-top: 350px;
+    margin-left: 220px;
+}
+#opMain{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: url("images/main1.png") no-repeat center center;*/
+    background-size:cover;
+}
+
+/*下一页的箭号*/
+.nextArrow{
+    position: absolute;
+    background:url("../images/scrollArrow.png") no-repeat center center;
+    background-size: cover;
+    width:38px;
+    height:21px;
+    bottom: 20px;
+    left: 301px;
+    animation: nextAnimate 0.7s alternate infinite;
+    -webkit-animation: nextAnimate 0.7s alternate infinite;
+}
+/*下一页动画*/
+@keyframes nextAnimate {
+    from {
+        opacity: 0;
+        bottom: 10px;
+    }
+    to {
+        opacity: 1;
+        bottom: 50px;
+    }
+}
+@-webkit-keyframes nextAnimate {
+    from {
+        opacity: 0;
+        bottom: 10px;
+    }
+    to {
+        opacity: 1;
+        bottom: 40px;
+    }
+}
+
+/*弹出首页目录*/
+.goMain{
+    position:absolute;
+    display: block;
+    top:10px;
+    right:30px;
+    width: 64px;
+    height: 64px;
+    background: url("../images/iconfont-shouye.png") no-repeat center center;
+    background-size:cover;
+}
+
+#content .bg{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background:url("../images/contentbg.png") no-repeat center center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    /*opacity: 0.95;*/
+}
+
+/*模糊背景，微信不支持，弃用*/
+/*.active{*/
+    /*-webkit-backdrop-filter: blur(30px);*/
+    /*-webkit-filter: blur(30px);*/
+    /*-moz-filter: blur(30px);*/
+    /*-ms-filter: blur(30px);*/
+    /*filter: blur(30px);*/
+/*}*/
